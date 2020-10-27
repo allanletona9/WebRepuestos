@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  phpVersion: 5.7
+  phpVersion: 7.2
 
 steps:
 - script: |
@@ -25,5 +25,5 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-- script:  './vendor/bin/phpunit'
+- script:  ./vendor/bin/phpunit
   displayName: 'Run tests with phpunit'
