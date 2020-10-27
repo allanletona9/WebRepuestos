@@ -25,4 +25,4 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-- script: ./vendor/bin/phpunit
+- script: ./vendor/bin/phpunit.bat
