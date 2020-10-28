@@ -27,3 +27,8 @@ steps:
 
 - script:  phpunit
   displayName: 'Run tests with phpunit'
+
+- task: PublishTestResults@2
+  inputs:
+    testRunner: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
